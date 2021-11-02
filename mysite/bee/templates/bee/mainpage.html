@@ -1,0 +1,162 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="{% static 'bee/css/style.css' %}" rel="stylesheet" type="text/css"/>
+	<link rel="shortcut icon" href="{% static 'bee/images/3.png' %}" type="image/x-icon">
+	<meta charset='UTF-8'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<title>{{title}}</title>
+</head>
+
+<body>
+
+<div class = 'nav-container main-blocks'>
+	<div class="reg-a">
+		<img class="page-img" src="{% static 'bee/images/3.png' %}", height="70px", width="70px">
+		{% if request.user.is_authenticated %}
+			<span class="hello global-color">Добро пожаловать, {{ user.username }}</span>
+			<a class = 'reg exit global-color link' href="{% url 'logout' %}">Выйти</a>
+		{% else %}
+			<a class = 'reg global-color link' href="{% url 'register' %}">Регистрация</a>
+			<a class = 'reg global-color link' href="{% url 'login' %}">Войти</a>
+		{% endif %}
+	</div>
+
+	<div class="nav-a">
+		<a class = 'nav global-color' href='#about'>О нас</a>
+		<a class = 'nav global-color' href='#faq'>Вопрос - Ответ</a>
+		<a class = 'nav global-color' href='#sponsors'>Спонсоры</a>
+	</div>
+</div>
+
+
+<header class="main-blocks">
+	<div class = 'parent-title'>
+		<div class = 'title'>
+			<p class = 'local-title'>
+				<span class="span_ global-color">Марафон Ешь и худей!</span><br>
+				<a href = "#marafon_button"><button class="start-button" type = "submit">Начни путь к лутшему записавшись!</button></a>
+			</p>
+		</div>
+	</div>
+</header>
+
+	
+<div class = 'about'>
+	<div class = 'title-about'>О марафоне</div>
+	<div class = 'image--content main-blocks'>
+		<div class = 'data'>
+
+			<div class="data-a"><span class="global-color">старт набора ..</span></div>
+
+			<div class="data-a"><span class="global-color">Длительность<br> с .. до ..</span></div>
+
+			<div class="data-a"><span class="global-color">Как именно проходит<br> процесс тренировок?</span></div>
+		</div>
+		<img class="sub-img fff" src="https://saharokclub.ru/wp-content/uploads/2018/10/pravilnoe_pokhudenie_bez_nevospolnimykh_poter-768x513.jpg", width="2000px", height="2000px">
+	</div>
+</div>
+
+<div class="info">
+	{%for a in info%}
+		<div class = 'title-content'>{{a.info_title}}</div>
+		<div class = 'about-for-flex main-blocks'>
+			<div  class="info-text">
+				<div class="sub-text"><span>{{a.info_text}}</span></div>
+			</div>                                                                                                  <a id = 'about'></a>
+	
+			<img class="sub-img fff" src="{{ a.info_image.url }}", height="2000px", width="2000px">
+
+		</div>
+
+	{% endfor %}
+</div>
+
+	
+<div class = 'facts main-blocks'>
+	<div class="fact"><span class="sas global-color">Ты записываешься</span></div>
+	<div class="fact"><span class="sas global-color">Получаешь доступ к контенту для марафона</span></div>
+	<div class="fact"><span class="sas global-color">Получаешь приветственое письмо с инструкцией</span></div>
+	<div class="fact last-fact"><span class="sas global-color">И начинаешь менять свою жизнь!</span></div>
+</div>
+
+<a id = 'marafon_button'></a>
+
+
+<div class="marafons_ main-blocks">
+	{%for b in marafons%}
+		<div class="marafon-list">
+			<div class="ma-cont">
+				<div class="marafon-p"><span class="ma-color">{{b.marafon_name}}</span></div>
+				<span class="marafon-tiers ma-color">{{b.marafon_desc}}</span>
+				<span class="marafon ma-color">{{b.marafon_tiers}}</span>
+				<div class = 'marafon'><span class="ma-color">{{b.total_place}} мест осталось</span></div>
+				<div><a href='{% url "marafon_detail" b.slug %}'><button class="marafon-p button" type='submit'><span>Записаться!</span></button></a></div>
+			</div>
+		</div>                     
+	{% endfor %}
+</div>
+	
+
+<div class="faq-block">
+	<div class="title-faq">Вопрос - Ответ</div>
+
+	<div class="list-ques main-blocks">{% for c in faq %}
+		<details>
+			<summary><span class="global-color">{{c.text_ask}}</span></summary>
+			<span class="question global-color"><{{c.text_answer}}</span>                                                      <a id = 'faq'></a>
+		</details>
+	{% endfor %}
+	</div>
+</div>
+
+<div class="conect">
+	<div class="title-conect">Обратная связь</div>
+	<div class="list-conect main-blocks">
+		<img class="cur" src="https://img-premium.flaticon.com/png/512/4494/premium/4494519.png?token=exp=1633532322~hmac=2a93a916ac9faf52e6ff5bf2201b9e40", width="200px", height="200px">
+		<img class="cur" src="https://img-premium.flaticon.com/png/512/3670/premium/3670125.png?token=exp=1633532107~hmac=2d2bdae3ee902e7cb403a128f4357e08", height="200px", width="200px">
+		<img class="cur" src="https://cdn-icons-png.flaticon.com/512/185/185982.png", height="200px", width="200px">
+		<img class="cur" src="https://img-premium.flaticon.com/png/512/1377/premium/1377218.png?token=exp=1633532226~hmac=55d05cdadce9fd78ce1a970d924e340f", height="200px", width="200px">
+		
+	</div>
+</div>
+
+<div class="list-sponsors">
+	<div class="title-sponsors">Наши спонсоры</div>
+
+	<div class="main-sponsor main-blocks">
+		{% for sponsor in sponsors %}
+		<div class="flex">
+			<a href="{{ sponsor.link }}">
+				<div class="containera">
+					<div class="title-sponsor_ sy"><span style="color: #090909;">{{sponsor.title_sponsor}}</span></div>
+					<div class="sub-sub-s sy">	                      <a id = 'sponsors'></a>
+						<img
+						 src="{{ sponsor.url_image.url }}"></div>
+					<span class="desc sy" style="color: #090909;">{{sponsor.desc_sponsor}}</span>
+				</div>
+			</a>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+
+
+	<footer class="main-blocks">
+		<div class="text-footer">
+			<div class="tel-and-email">
+				<div><span class="color2">Телефон: 9325563060</div>
+				<div><span class="color2">Почта: chella05andrey@gmail.com</div>
+			</div>
+			</span>
+		</div>
+	</footer>
+
+
+</body>
+
+</html>

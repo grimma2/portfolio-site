@@ -1,0 +1,812 @@
+
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+html, body {
+	font-size: 20px;
+
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.ma-color {
+	color: #CACAF0;
+}
+
+.global-color {
+	color: #271220;
+}
+
+.fff {
+	margin-top: 20px;
+}
+
+button {
+	background-color: #27B57F;
+	color: #F4CE35;
+	border: 1px solid #19172F;
+	border-radius: 50px;
+
+	transition: background-color .7s;
+}
+
+button:hover {
+	background-color: #000000;
+}
+
+.main-blocks {
+	margin-left: 3rem;
+	width: 95%;
+	margin-top: 45px;
+	border: 1px solid #0000;
+	border-radius: 20px;
+}
+
+header {
+	height: 60vh;
+	margin-left: 34px;
+	margin-top: 30px;
+	background: url(https://images.pexels.com/photos/1365352/pexels-photo-1365352.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center no-repeat;
+}
+
+.simple-img {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.page-img {
+	margin-right: 40px;
+}
+
+.nav {
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.reg-a {
+	display: flex;
+	width: 45%;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 10px;
+}
+
+.nav:hover {
+	color: yellow;
+	transition: color .4s linear;
+	text-decoration: underline;
+}
+
+.link:hover {
+	color: yellow;
+	transition: color .4s linear;
+	text-decoration: underline;
+}
+
+.nav-a {
+	display: flex;
+	justify-content: flex-end;
+	justify-content: space-around;
+	align-items: center;
+	margin-right: 10px;
+	margin-left: 30px;
+	width: 50%;
+}
+
+.reg {
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.parent-title {
+	min-width: 80wh;
+	display: flex;
+	margin-left: 200px;
+}
+
+.title {
+	width: 80wh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.span_ {
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.start-button {
+	padding: 30px;
+	font-size: 30px;
+	font-weight: 600;
+	margin-top: 30px;
+}
+
+.nav-container {
+	position: sticky;
+	display: flex;
+	align-items: center;
+	min-height: 10vh;
+	background: url(https://www.xmple.com/wallpaper/yellow-gradient-linear-pink-2880x1800-c2-ffd700-c71585-a-330-f-14.svg) center no-repeat;
+}
+
+.local-title {
+	width: 80wh;
+	margin-top: 100px;
+	padding-top: 50px;
+	font-weight: 800;
+	line-height: 1.6rem;
+}
+
+.far {
+	width: 80wh;
+	padding-bottom: 50px;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.hello {
+	font-weight: 800;
+	font-size: 30px;
+}
+
+.title-about {
+	margin-bottom: 20px;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 30px;
+	font-weight: 800;
+}
+
+.data-a {
+	margin-left: 70px;
+	line-height: 50px;
+	font-size: 30px;
+}
+
+.data {
+	width: 60%;
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.image--content {
+	background: url(https://images.pexels.com/photos/3802667/pexels-photo-3802667.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center no-repeat;
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-for-flex {
+	background: url(https://free-images.com/or/ece1/pattern_background_background_371150.jpg) center no-repeat;
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.info-text {
+	width: 30%;
+	line-height: 50px;
+	height: 70%;
+}
+
+.sub-text {
+	padding-left: 20px;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.sub-img {
+	display: block;
+	max-width: 60%;
+	height: auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+	
+.title-content {
+	font-size: 50px;
+	display: flex;
+	align-items: center;
+	height: 10vh;
+	justify-content: center;
+}
+
+.facts {
+	background: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1613129629_5-p-fon-zhelto-fioletovii-gradient-5.jpg) center no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.last-fact {
+	padding-bottom: 2.2rem;
+}
+
+.fact {
+	padding-top: 1.2em;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 800;
+}
+
+.marafon-list {
+	width: 50wh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ma-cont {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+	padding: 11em 4em 11em 4em;
+	height: 80%;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #000000;
+	background: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1613244500_135-p-temno-sinii-gradient-fon-174.jpg);
+	border-radius: 50px;
+}
+
+.color {
+	color: #8CA3C7;
+}
+
+.marafons_ {
+	margin-top: 40px;
+ 	background: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1613127588_43-p-fon-zheltii-gradient-48.jpg) center no-repeat;
+	display: flex;
+	justify-content: center;
+}
+
+.marafon {
+	width: 30wh;
+	margin-top: 20px;
+	line-height: 1.2rem;
+	max-width: 250px;
+}
+
+.marafon-tiers {
+	width: 20wh;
+	line-height: 2rem;
+	margin-top: 30px;
+	max-width: 240px;
+}
+
+.marafon-p {
+	margin-top: 30px;
+	font-weight: 800;
+	font-size: 40px;
+	padding-left: 50px;
+}
+
+.button {
+	padding: 15px;
+	font-weight: 800;
+	font-size: 30px;
+	margin-left: 50px;
+}
+
+.faq-block {
+	margin-top: 40px;
+}
+
+.title-faq {
+	font-size: 30px;
+	font-weight: 800;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 10vh;
+}
+
+summary {
+	margin-top: 30px;
+	font-weight: 600;
+	font-size: 25px;
+	padding: 20px;
+	border: 4px solid #353547;
+}
+
+details {
+	width: 70wh;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-top: 70px;
+}
+
+.question {
+	font-size: 30px;
+	line-height: 1.5rem;
+	min-height: 40vh;
+}
+
+.list-ques {
+	background: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1613127652_157-p-fon-zheltii-gradient-187.jpg) center no-repeat;
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+}
+
+.title-conect {
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 30px;
+	font-weight: 800;
+}
+
+.conect {
+	margin-top: 30px;
+}
+
+.list-conect {
+	background: url(https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center no-repeat;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-bottom: 40px;
+	padding-top: 40px;
+	font-size: 30px;
+	font-weight: 800;
+}
+
+.list-sponsors {
+	margin-top: 50px;
+}
+
+.title-sponsors {
+	text-align: center;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.main-sponsor {
+	background: url(https://www.xmple.com/wallpaper/yellow-gradient-linear-blue-5120x2880-c2-ffd700-4169e1-a-135-f-14.svg) center no-repeat;
+	display: flex;
+	justify-content: space-between;
+}
+
+.desc {
+	font-size: 20px;
+	margin-top: 15px;
+	width: 100%;
+	line-height: 1.6rem;
+}
+
+.containera {
+	margin-left: 20px;
+	margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.flex {
+	margin-left: 20px;
+	margin-top: 30px;
+	width: 25%;
+	display: flex;
+}
+
+.sy {
+
+	margin-top: 1.5em;
+}
+
+.sub-sub-s {
+	max-width: 250px;
+	max-height: 250px;
+}
+
+.sub-sub-s div {
+	width: 110%;
+	height: 110%;
+}
+
+.title-sponsor_ {
+	font-size: 30px;
+	font-weight: 800;
+}
+
+footer {
+	background-color: #000000;
+	margin-bottom: 20x;
+}
+
+.cur {
+	cursor: pointer;
+	max-width: 200px;
+	max-height: 200px;
+}
+
+.text-footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 6em;
+	margin-right: 2em;
+}
+
+.tel-and-email {
+	height: 100%;
+	width: 30%;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.color2 {
+	color: #F0EAD6;
+}
+
+.net {
+	height: 300px;
+}
+
+.tel-and-email div {
+	margin-top: 30px;
+}
+
+.footer-img2 {
+	border: 1px solid #fff;
+	border-radius: 10px;
+	background-color: #fff;
+	padding: 10px;
+	display: block;
+	width: 19%;
+	height: 50%;
+}
+
+.div {
+	margin-top: 20px;
+	height: 120px;
+	width: 120px;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+	.local-title {
+		margin-top: 50px;
+		padding-top: 30px;
+	}
+
+	.parent-title {
+		margin-left: 150px;
+		min-width: 90wh;
+	}
+
+	.start-button {
+		padding: 20px;
+	}
+
+	.span_ {
+		font-size: 30px;
+	}
+
+	.about-for-flex {
+		margin-top: 30px;
+	}
+
+	.data-a {
+		margin-left: 60px;
+		line-height: 30px;
+	}
+
+ /* в будущем сильно уменьшить */
+
+	.info-text {
+		line-height: 40px;
+		width: 40%;
+	}
+
+/* ******* */
+
+	.sub-img {
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+
+/* в будущем сильно уменьшить */
+
+	.fact span {
+		font-size: 35px;
+	}
+
+	.marafon-tiers {
+		line-height: 1.6rem;
+	}
+
+	.marafon-list {
+		width: 30wh;
+	}
+
+	.marafon-p {
+		padding-left: 40px;
+	}
+
+	details {
+		margin-top: 50px;
+	}
+
+	.question {
+		line-height: 1.3rem;
+		font-size: 25px;
+	}
+
+	.title-conect {
+		margin-bottom: 40px;
+	}
+
+	.conect {
+		margin-top: 20px;
+	}
+
+	.list-conect {
+		margin-bottom: 20px;
+		padding-top: 30px;
+	}
+
+	.list-sponsors {
+		margin-top: 30px;
+	}
+
+	.desc {
+		line-height: 1.4rem;
+	}
+
+	.containera {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+/* ******* */
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+	header {
+		height: 45vh;
+	}
+
+	.local-title {
+		margin-top: 40px;
+		padding-top: 20px;
+	}
+
+	.parent-title {
+		margin-left: 130px;
+		min-width: 90wh;
+	}
+
+	.start-button {
+		padding: 15px;
+	}
+
+	.span_ {
+		font-size: 25px;
+	}
+
+	.about-for-flex {
+		margin-top: 20px;
+	}
+
+	.data-a {
+		margin-left: 50px;
+		line-height: 20px;
+	}
+
+ /* в будущем сильно уменьшить */
+
+	.info-text {
+		line-height: 30px;
+		width: 40%;
+	}
+
+/* ******* */
+
+	.sub-img {
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+
+/* в будущем сильно уменьшить */
+
+	.fact span {
+		font-size: 25px;
+	}
+
+	.marafon-tiers {
+		line-height: 1.4rem;
+	}
+
+	.marafon-list {
+		width: 40wh;
+	}
+
+	.marafon-p {
+		padding-left: 30px;
+	}
+
+	details {
+		margin-top: 30px;
+	}
+
+	.question {
+		line-height: 1.3rem;
+		font-size: 25px;
+	}
+
+	.title-conect {
+		margin-bottom: 30px;
+	}
+
+	.conect {
+		margin-top: 15px;
+	}
+
+	.list-conect {
+		margin-bottom: 15px;
+		padding-top: 20px;
+	}
+
+	.list-sponsors {
+		margin-top: 20px;
+	}
+
+	.desc {
+		line-height: 1.3rem;
+	}
+
+	.containera {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+}
+
+
+@media screen and (max-width: 600) {
+
+	header {
+		height: 40vh;
+	}
+
+	.local-title {
+		margin-top: 30px;
+		padding-top: 15px;
+	}
+
+	.parent-title {
+		margin-left: 100px;
+		min-width: 90wh;
+	}
+
+	.start-button {
+		padding: 10px;
+	}
+
+	.span_ {
+		font-size: 23px;
+	}
+
+	.about-for-flex {
+		margin-top: 15px;
+	}
+
+	.data-a {
+		margin-left: 40px;
+	}
+
+/* в будущем сильно уменьшить */
+
+	.info-text {
+		width: 40%;
+	}
+
+/* ******* */
+
+	.sub-img {
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+
+/* в будущем сильно уменьшить */
+
+	.fact span {
+		font-size: 20px;
+	}
+
+	.marafon-tiers {
+		line-height: 1.2rem;
+	}
+
+	.marafon-list {
+		width: 40wh;
+	}
+
+	.marafon-p {
+		padding-left: 20px;
+	}
+
+	details {
+		margin-top: 20px;
+	}
+
+	.question {
+		line-height: 1.3rem;
+		font-size: 20px;
+	}
+
+	.title-conect {
+		margin-bottom: 20px;
+	}
+
+	.conect {
+		margin-top: 10px;
+	}
+
+	.list-conect {
+		margin-bottom: 10px;
+		padding-top: 15px;
+	}
+
+	.list-sponsors {
+		margin-top: 15px;
+	}
+
+	.desc {
+		line-height: 1.3rem;
+	}
+
+	.containera {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.nav-container {
+		height: 7vh;
+	}
+
+}
+
+@media screen and (max-width: 425) {
+	.nav-container {
+		height: 6vh;
+	}
+
+	header {
+		height: 20vh;
+	}
+}

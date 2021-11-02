@@ -1,0 +1,139 @@
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;margin:0 auto;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+button {
+	background-color: #27B57F;
+	color: #F4CE35;
+	border: 1px solid #19172F;
+	border-radius: 50px;
+
+	transition: background-color .7s;
+}
+
+button:hover {
+	background-color: #000000;
+}
+
+.main-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sub-cont {
+	width: 70wh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: url() center no-repeat;
+}
+
+.item {
+	font-size: 30px;
+	text-align: center;
+	margin-top: 15px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.main-img {
+	width: 100wh;
+	margin-top: 30px;
+	margin-bottom: 60px;
+	display: flex;
+	justify-content: center;
+}
+
+.o {
+	font-size: 35px;
+	font-weight: 800;
+	border: 1px solid #000000;
+	padding: 15px;
+	background-color: yellow;
+	border-radius: 10px;
+	margin-top: 20px;
+	width: 100wh;
+	display: flex;
+	justify-content: center;
+}
+
+.main-title {
+	font-size: 800;
+	font-size: 35px;
+	text-align: center;
+}
+
+.button {
+	padding: 30px;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+header {
+	width: 100wh;
+	height: 20vh;
+	display: flex;
+	align-items: center;
+	background-color: yellow;
+}
+
+.title {
+	margin-left: 180px;
+	font-size: 50px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.page-img {
+	margin-left: 70px;
+}
+
+@media screen and (max-width: 800) {
+
+	header {
+		height: 15vh;
+	}
+
+	.title {
+		font-size: 30px;
+		margin-left: 100px;
+	}
+
+	.button {
+		margin-top: 20px;
+		margin-bottom: 15px;
+		margin-left: 15px;
+	}
+}
+
+@media screen and (max-width: 425) {
+
+	header {
+		height: 7vh;
+	}
+}
+
+@media screen and (max-width: 425) {
+	header{
+		height: 5vh;
+	}
+}
