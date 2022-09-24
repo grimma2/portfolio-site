@@ -23,7 +23,6 @@ button {
 	color: #F4CE35;
 	border: 1px solid #19172F;
 	border-radius: 50px;
-
 	transition: background-color .7s;
 }
 
@@ -32,6 +31,7 @@ button:hover {
 }
 
 .main-container {
+	padding-bottom: 1.5em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -75,7 +75,7 @@ button:hover {
 }
 
 .main-title {
-	font-size: 800;
+	font-weight: 800;
 	font-size: 35px;
 	text-align: center;
 }

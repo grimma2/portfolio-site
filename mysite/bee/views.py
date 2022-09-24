@@ -1,17 +1,13 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse, HttpResponseRedirect
-from .models import *
-from .utils import *
+from django.http import HttpResponseRedirect
 from .forms import *
 from django.urls import reverse_lazy
 from django.contrib.auth import login, logout
-from django.views.generic import ListView, DetailView, CreateView, View
+from django.views.generic import DetailView, CreateView
 from django.contrib.auth.views import LoginView
-from django.db.models import *
 
 
 def main(request):
-
 	info = Info.objects.all()
 	marafons = Marafon.objects.all()
 	faq = Faq.objects.all()
@@ -19,12 +15,12 @@ def main(request):
 
 	return render(request, 'bee/mainpage.html', {'info': info, 'marafons': marafons, 'faq': faq, 'sponsors': sponsors, 'title': 'Ешь и худей'})
 
+
 def addplace(request, **kwargs):
 	marafon_slug = kwargs.get('marafon_slug')
 	Marafon.objects.get(slug=marafon_slug)-1
 
 	return HttpResponseRedirect('/redirect/')
-
 
 
 class Register(CreateView):
@@ -36,6 +32,7 @@ class Register(CreateView):
 		user = form.save()
 		login(self.request, user)
 		return redirect('main')
+
 
 class Login(LoginView):
 	form_class = UserAuthentication

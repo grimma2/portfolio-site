@@ -4,7 +4,7 @@
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
 nav,footer,header,aside{display: block;}
-html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%; overflow-x: hidden}
 input,button,textarea{font-family:inherit;}
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
@@ -51,8 +51,8 @@ button:hover {
 }
 
 .main-blocks {
-	margin-left: 3rem;
 	width: 95%;
+	margin: 0 auto;
 	margin-top: 45px;
 	border: 1px solid #0000;
 	border-radius: 20px;
@@ -365,7 +365,6 @@ details {
 }
 
 .list-conect {
-	background: url(https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center no-repeat;
 	margin-top: 20px;
 	display: flex;
 	justify-content: space-around;

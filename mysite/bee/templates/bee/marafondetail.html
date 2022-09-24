@@ -24,16 +24,13 @@
 				<div class="item">Нужно будет запонить форму на сайте</div>
 				<div class="item">После ты получишь приглашение в общую группу</div>
 				<div class="item">Мест осталось {{ marafon.total_place }}</div>
-				<div class="item">Описание {{ marafon.marafon_items }}</div>
+				<div class="item">Описание {{ marafon.marafon_desc }}</div>
 				<div class="item">Стоимость {{ marafon.price }}</div>
 
 				<div class="item o">Старт набора - ..</div>
 
 				<div class="item o">Длительность - с .. до ..</div>
-	
-				<a href='{% url "marafonaddplace" marafon.slug %}'><button class="item button" type='submit'>Открыть форму оплаты</button></a>
-			</div>
+            </div>
 		</div>
-
     </body>
 </html>
